@@ -9,7 +9,7 @@
 int main(void)
 {
 char r;
-for (r = 'a' ; r <= 'z' ; r++)
+for (r = 'a' ; r <= 'z' ;)
 {
 if (r == 'q')
 {
@@ -22,6 +22,7 @@ r++;
 else
 {
 putchar(r);
+r++;
 }
 }
 putchar('\n');
