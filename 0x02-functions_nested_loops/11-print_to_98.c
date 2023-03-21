@@ -25,7 +25,7 @@ printf("%d\n", i);
 }
 else if (n > 98)
 {
-for (j = n ; j => 98 ; j--)
+for (j = n ; j >= 98 ; j--)
 {
 printf("%d, ", j);
 }
