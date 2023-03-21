@@ -29,7 +29,7 @@ for (j = n ; j >= 98 ; j--)
 {
 if (j == 98)
 {
-printf("%d", j);
+printf("%d\n", j);
 }
 else
 {
