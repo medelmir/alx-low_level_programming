@@ -11,7 +11,7 @@ int main()
 { 
 int i = 0;
     long int a = 0, b = 1, next;
-    for (i = 0 ; i < 59 ; i++)
+    for (i = 0 ; i < 50 ; i++)
     {
     next = a + b ; 
     a = b;
