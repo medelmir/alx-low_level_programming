@@ -14,11 +14,11 @@ for (j = 0; j <= 14; j++)
 if (j >= 10)
 {
 ch = '1';  
-putchar(ch);
+_putchar(ch);
 }
 ch = j % 10 + '0';
-putchar(ch);
+_putchar(ch);
 }
-putchar('\n');
+_putchar('\n');
 }
 }
