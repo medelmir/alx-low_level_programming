@@ -10,6 +10,15 @@ int i  =  1;
 if (n < 0)
 {
 _putchar ('-');
+if (n == INT_MIN)
+{
+_putchar ('2');
+n = 147483648;
+}
+else
+{
+n = -n
+}
 n  =  -n;
 }
 while (n  /  i  >  9)
