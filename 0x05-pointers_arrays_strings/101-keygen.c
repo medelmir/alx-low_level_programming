@@ -9,12 +9,10 @@
 int main(void)
 {
 srand(time(NULL));
-int sum;
-int last_digit;
-int i;
+int sum, digit, las_digit, i;
 for (i = 0; i < 100; i++)
 {
-int digit = rand() % 10;
+digit = rand() % 10;
 sum += digit;
 putchar(digit + '0');
 }
