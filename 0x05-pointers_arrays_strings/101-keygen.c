@@ -2,21 +2,30 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* main - program that generates random valid
-* passwords for the program 101-crackme
-* Return: Always 0 (Success)
-*/
+ * main - program that generates random valid
+ * passwords for the program 101-crackme
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int sum;
-char c;
-srand(time(NULL));
-while (sum <= 2645)
-{
-c = rand() % 128;
-sum += c;
-putchar(c);
-}
-putchar(2772 - sum);
-return (0);
+    srand(time(NULL));
+
+    const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{}|;':\",./<>?\\ ";
+    const int charset_size = 93;
+
+    int sum = 0;
+    int i;
+    int last_char;
+    for (i = 0; i < 100; i++)
+    {
+        int index = rand() % charset_size;
+        sum += charset[index];
+        putchar(charset[index]);
+    }
+
+    last_char = (2772 - sum) % charset_size;
+    putchar(charset[last_char]);
+
+    return 0;
 }
