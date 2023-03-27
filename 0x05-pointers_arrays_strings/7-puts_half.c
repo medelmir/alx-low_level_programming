@@ -18,7 +18,7 @@ half = (length - 1) / 2;
 str = str - half;
 while (*str != '\0')
 {
-putchar(*str);
+_putchar(*str);
 str++;
 }
-putchar('\n');
+_putchar('\n');
