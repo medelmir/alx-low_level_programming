@@ -15,7 +15,7 @@ len++;
 int n = (len % 2 == 0) ? len / 2 : (len - 1) / 2;
 for (int i = n; i < len; i++)
 {
-putchar(str[i]);
+_putchar(str[i]);
 }
-putchar('\n');
+_putchar('\n');
 }
