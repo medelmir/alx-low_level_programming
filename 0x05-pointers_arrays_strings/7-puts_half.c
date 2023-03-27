@@ -22,3 +22,4 @@ _putchar(*str);
 str++;
 }
 _putchar('\n');
+}
