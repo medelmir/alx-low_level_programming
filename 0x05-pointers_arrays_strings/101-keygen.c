@@ -9,7 +9,8 @@
 int main(void)
 {
 srand(time(NULL));
-int sum = 0;
+int sum;
+sum = 0;
 int last_digit;
 int i;
 for (i = 0; i < 100; i++)
