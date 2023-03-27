@@ -8,15 +8,15 @@
 */
 int main(void)
 {
+int sum;
+char c;
 srand(time(NULL));
-int sum, digit, las_digit, i;
-for (i = 0; i < 100; i++)
+while (sum <= 2645)
 {
-digit = rand() % 10;
-sum += digit;
-putchar(digit + '0');
+c = rand() % 128;
+sum += c;
+putchar(c);
 }
-last_digit = (2772 - sum) % 10;
-putchar(last_digit + '0');
+putchar(2772 - sum);
 return (0);
 }
