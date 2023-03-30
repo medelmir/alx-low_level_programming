@@ -1,9 +1,9 @@
 #include "main.h"
 /**
 * rot13 - encoder rot13
-* @result: pointer to string params
+* @s: pointer to string params
 *
-* Return: result
+* Return: *s
 */
 char *rot13(char *s)
 {
