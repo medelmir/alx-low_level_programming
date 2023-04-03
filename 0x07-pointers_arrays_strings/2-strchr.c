@@ -15,7 +15,7 @@ len++;
 }
 if (c == '\0')
 {
-return (NULL);
+return (0);
 }
 for (i = 0 ; i < len ; i++)
 {
