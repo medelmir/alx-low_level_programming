@@ -7,14 +7,16 @@
 */
 void print_diagsums(int *a, int size)
 {
-int dia1 = 0, dia2 = 0;
-for (int i = 0; i < size; i++)
+int i;
+int j;
+int d1 = 0, d2 = 0;
+for (i = 0; i < size; i++)
 {
-dia1 += a[i * size + i];
+d1 += a[i * size + i];
 }
-for (int i = 0; i < size; i++)
+for (j = 0; j < size; j++)
 {
-dia2 += a[i * size + (size - i - 1)];
+d2 += a[j * size + (size - j - 1)];
 }
-printf("%d, %d\n", dia1, dia2);
+printf("%d, %d\n", d1, d2);
 }
