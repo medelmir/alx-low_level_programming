@@ -10,6 +10,10 @@ char *_strstr(char *haystack, char *needle)
 char *m = haystack;
 char *n = needle;
 char *z;
+if (*needle == '\0')
+{
+return (haystack);
+}
 while (*m != '\0')
 {
 if ((*m) == (*n))
@@ -24,6 +28,7 @@ if (*n == '\0')
 {
 return (z);
 }
+n = needle;
 }
 m++;
 }
