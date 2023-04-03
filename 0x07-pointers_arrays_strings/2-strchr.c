@@ -8,6 +8,7 @@
 char *_strchr(char *s, char c)
 {
 int len = 0;
+int i;
 while (s[len] != '\0')
 {
 len++;
@@ -16,7 +17,6 @@ if (c == '\0')
 {
 return (s);
 }
-int i;
 for (i = 0 ; i < len ; i++)
 {
 if (s[i] == c)
