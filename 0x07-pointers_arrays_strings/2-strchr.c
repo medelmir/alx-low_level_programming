@@ -13,6 +13,10 @@ while (s[len] != '\0')
 {
 len++;
 }
+if (c == '\0')
+{
+return ("");
+}
 for (i = 0 ; i < len ; i++)
 {
 if (s[i] == c)
@@ -20,5 +24,5 @@ if (s[i] == c)
 return (s + i);
 }
 }
-return ("");
+return (0);
 }
