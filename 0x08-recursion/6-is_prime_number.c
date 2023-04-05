@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * validate - checks to see if number is prime
- * @m:param
- * @k:param
- * Return:int
- */
+* validate - checks to see if number is prime
+* @m:param
+* @k:param
+* Return:int
+*/
 int validate(int m, int k)
 {
-if (k > m/2)
+if (k > m / 2)
 return (1);
 if (m % k == 0)
 return (0);
