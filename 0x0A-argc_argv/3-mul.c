@@ -8,21 +8,21 @@
 */
 int main(int argc, char *argv[])
 {
-        int i;
-        int k;
-        int z;
-        (void)*argv;
-        if (argc - 1 != 2)
-        {
-                printf("Error\n");
-                return (1);
-        }
-        else
-        {
-                i = atoi(argv[1]);
-                k = atoi(argv[2]);
-                z = i * k;
-                printf("%d\n", z);
-        }
-        return (0);
+int i;
+int k;
+int z;
+(void)*argv;
+if (argc - 1 != 2)
+{
+printf("Error\n");
+return (1);
+}
+else
+{
+i = atoi(argv[1]);
+k = atoi(argv[2]);
+z = i * k;
+printf("%d\n", z);
+}
+return (0);
 }
