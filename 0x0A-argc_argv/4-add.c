@@ -5,41 +5,33 @@
 * main - program that adds positive numbers
 * @argc: int
 * @argv: list
-* Return: 1 or 0
-*
-*
+* Return: 1 if argc - 1==0  or 0 otherwise
 */
 int main(int argc, char *argv[])
 {
+int result;
+char *s;
 int i;
-int a;
-int b;
-char *tm;
+result = 0;
 if (argc - 1 == 0)
 {
 printf("0\n");
+return (0);
 }
-else
+for (i = 1; i < argc; i++)
 {
-for (i = 1 ; i < argc ; i++)
+s = argv[i];
+while (*s)
 {
-tm = argv[i];
-while (*tm)
-{
-if (!isdigit(*tm))
+if (!isdigit(*s))
 {
 printf("Error\n");
 return (1);
 }
-tm++;
+s++;
 }
+result += atoi(argv[i]);
 }
-for (i = 0 ; i < argc ; i++)
-{
-b = atoi(argv[i]);
-a += b;
-}
-printf("%d\n", a);
-}
+printf("%d\n", result);
 return (0);
 }
