@@ -21,8 +21,8 @@ else
 {
 i = atoi(argv[1]);
 k = atoi(argv[2]);
-z = i * k;
+z = i *k;
 printf("%d\n", z);
 }
 return (0);
-}
+i}
