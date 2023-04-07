@@ -25,4 +25,4 @@ z = i *k;
 printf("%d\n", z);
 }
 return (0);
-i}
+}
