@@ -1,39 +1,39 @@
-#include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
 /**
-* str_concat -  function that concatenates two strings.
-* @s1: param
-* @s2: param
-* Return: null if s==null otherwise s
-*/
+ * str_concat - function that concatenates two strings.
+ * @s1: param
+ * @s2: param
+ * Return: concat of s1 and s2
+ */
 char *str_concat(char *s1, char *s2)
 {
-char *s;
-int i, j, z, y;
-z = 0;
-y = 0;
-while (s1[z] != '\0')
-{
+char *str_c;
+int x, z;
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
+x = z = 0;
+while (s1[x] != '\0')
+x++;
+while (s2[z] != '\0')
 z++;
-}
-while (s2[y] != '\0')
-{
-y++;
-}
-s = (char *) malloc(z + y + 1);
-if (s == NULL)
-{
+str_c = malloc(sizeof(char) * (x + z + 1));
+if (str_c == NULL)
 return (NULL);
-}
-for (i = 0; s1[i] != '\0'; i++)
+x = z = 0;
+while (s1[x] != '\0')
 {
-s[i] = s1[i];
+str_c[x] = s1[x];
+x++;
 }
-for (j = 0; s2[j] != '\0'; j++)
+while (s2[z] != '\0')
 {
-s[i++] = s2[j];
+str_c[x] = s2[z];
+x++, z++;
 }
-s[i] = '\0';
-return (s);
+str_c[x] = '\0';
+return (str_c);
 }
