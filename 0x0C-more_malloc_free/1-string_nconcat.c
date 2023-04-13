@@ -19,8 +19,8 @@ if (s2 == NULL)
 s2 = "";
 length1 = strlen(s1);
 length2 = strlen(s2);
-if (n > lenght2)
-n = lenght2
+if (n > length2)
+n = length2
 s = malloc(length1 + n + 1);
 if (s == NULL)
 return (NULL);
