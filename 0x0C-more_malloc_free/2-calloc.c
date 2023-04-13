@@ -14,7 +14,7 @@ void *rs;
 if (nmemb == 0 || size == 0)
 return (NULL);
 rs = malloc(nmemb * size);
-if (result == NULL)
+if (rs == NULL)
 return (NULL);
 memset(rs, 0, nmemb * size);
 return (rs);
