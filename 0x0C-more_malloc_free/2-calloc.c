@@ -10,11 +10,12 @@
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+void *rs;
 if (nmemb == 0 || size == 0)
 return (NULL);
-void *result = malloc(nmemb * size);
+rs = malloc(nmemb * size);
 if (result == NULL)
 return (NULL);
-memset(result, 0, nmemb * size);
-return (result);
+memset(rs, 0, nmemb * size);
+return (rs);
 }
