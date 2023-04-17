@@ -7,6 +7,7 @@
 * @owner: owner's name
 * Description: just a lone dog struct in  a big kitty world
 */
+typedef struct dog dog_t;
 struct dog
 {
 char *name;
