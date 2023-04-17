@@ -23,15 +23,15 @@ if ((*dog).name == NULL)
 free(dog);
 return (NULL);
 }
-dog->owner = malloc(sizof(char) * (strlen(owner) + 1));
+dog->owner = malloc(sizeof(char) * (strlen(owner) + 1));
 if ((*dog).owner == NULL)
 {
 free(dog->name);
 free(dog);
 return (NULL);
 }
-dog->name = strcopy(dog->name, name);
+dog->name = strcpy(dog->name, name);
 dog->age = age;
-dog->name = strcopy(dog->owner, owner);
+dog->owner = strcpy(dog->owner, owner);
 return (dog);
 }
