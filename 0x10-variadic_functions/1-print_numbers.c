@@ -13,7 +13,10 @@ unsigned int i;
 va_list args;
 va_start(args, n);
 if (n == 0)
+{
+printf("\n");
 return;
+}
 if (separator != NULL)
 {
 printf("%d", va_arg(args, int));
