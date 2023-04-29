@@ -7,20 +7,19 @@
 size_t print_listint_safe(const listint_t *head)
 {
 size_t i = 0;
-const listint_t *temporary1 = head;
-const listint_t *temporary2 = head;
-if (head == NULL)
+const listint_t *node = head;
+if (!head)
 exit(98);
-while (temporary1 != NULL)
+while (node)
 {
-printf("[%p] %d\n", (void *)temporary1, temporary1->n);
+printf("[%p] %d\n", (void *)node, node->n);
 i++;
-temporary1 = temporary1->next;
-if (temporary1 >= temporary2)
+if (node->next >= node)
 {
-printf("-> [%p] %d\n", (void *)temporary1, temporary1->n);
+printf("-> [%p] %d\n", (void *)node->next, node->next->n);
 break;
 }
+node = node->next;
 }
 return (i);
 }
